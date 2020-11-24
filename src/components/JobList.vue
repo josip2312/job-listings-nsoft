@@ -1,6 +1,6 @@
 <template>
 	<main class="job-list">
-		<div class="container">
+		<div class="container spacing">
 			<JobCard v-for="job in jobs" :key="job.id" :job="job" />
 		</div>
 	</main>
@@ -60,4 +60,10 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+.job-list {
+	padding: 7.5rem 0;
+}
+.container {
+	--spacer: 6rem;
+}
 </style>
