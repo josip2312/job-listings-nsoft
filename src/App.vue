@@ -1,20 +1,16 @@
 <template>
 	<div id="app">
 		<TheHeader />
+		<JobList />
 	</div>
 </template>
 
 <script>
 import TheHeader from "@/components/TheHeader";
+import JobList from "./components/JobList.vue";
 export default {
 	name: "App",
-	components: { TheHeader },
-
-	async mounted() {
-		const res = await fetch("/data.json");
-		const data = await res.json();
-		console.log(data);
-	},
+	components: { TheHeader, JobList },
 };
 </script>
 
