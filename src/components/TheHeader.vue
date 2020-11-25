@@ -11,13 +11,12 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-@import "@/assets/sass/_mixins";
-@import "@/assets/sass/_variables";
 .header {
 	z-index: 1;
+	min-height: 15vh;
+
 	background-image: url("../assets/images/bg-header-mobile.svg");
 	background-color: var(--primary-400);
-	min-height: 15vh;
 	background-position: center;
 	background-size: cover;
 	background-repeat: no-repeat;

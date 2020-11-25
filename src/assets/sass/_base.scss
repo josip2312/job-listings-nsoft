@@ -6,9 +6,8 @@ html {
 	scroll-behavior: smooth;
 
 	@include mq-min($v-20) {
-		font-size: 85%;
+		font-size: 80%;
 	}
-
 	@include mq-max($v-6) {
 		font-size: 60%;
 	}

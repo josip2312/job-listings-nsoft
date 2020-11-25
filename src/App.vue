@@ -1,16 +1,17 @@
 <template>
 	<div id="app">
 		<TheHeader />
-		<JobList />
+		<JobsList />
 	</div>
 </template>
 
 <script>
 import TheHeader from "@/components/TheHeader";
-import JobList from "./components/JobList.vue";
+import JobsList from "./components/JobsList.vue";
+
 export default {
 	name: "App",
-	components: { TheHeader, JobList },
+	components: { TheHeader, JobsList },
 };
 </script>
 
