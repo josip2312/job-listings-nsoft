@@ -19,6 +19,9 @@
 import SkillTag from "@/components/SkillTag";
 export default {
 	name: "TagFilter",
+	components: {
+		SkillTag,
+	},
 	props: {
 		filterTags: {
 			type: Array,
@@ -28,9 +31,6 @@ export default {
 			type: Boolean,
 			required: true,
 		},
-	},
-	components: {
-		SkillTag,
 	},
 };
 </script>

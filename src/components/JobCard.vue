@@ -41,9 +41,8 @@
 <script>
 import SkillTag from "./SkillTag.vue";
 export default {
-	components: { SkillTag },
 	name: "JobCard",
-
+	components: { SkillTag },
 	props: {
 		job: {
 			type: Object,
