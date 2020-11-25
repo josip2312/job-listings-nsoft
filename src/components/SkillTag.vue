@@ -4,8 +4,8 @@
 			{{ tag }}
 		</span>
 		<button
-			@click="$emit('remove-filter-tag', tag)"
 			v-if="isFilter"
+			@click="$emit('remove-filter-tag', tag)"
 			class="tag-remove"
 		>
 			<img src="@/assets/images/icon-remove.svg" alt="" />
