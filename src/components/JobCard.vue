@@ -43,6 +43,7 @@ import SkillTag from "./SkillTag.vue";
 export default {
 	components: { SkillTag },
 	name: "JobCard",
+
 	props: {
 		job: {
 			type: Object,
@@ -80,7 +81,7 @@ export default {
 	box-shadow: var(--box-shadow);
 	border-radius: var(--br);
 
-	transition: all 300ms ease-in-out;
+	transition: opacity 400ms ease, transform 400ms ease;
 
 	@include mq-min($v-14) {
 		display: flex;
@@ -100,7 +101,7 @@ export default {
 	top: -3rem;
 
 	img {
-		width: 6rem;
+		width: 6.5rem;
 	}
 	@include mq-min($v-14) {
 		position: relative;
@@ -144,7 +145,7 @@ export default {
 		font-weight: bold;
 	}
 	&-new {
-		background-color: var(--neutral-500);
+		background-color: var(--primary-400);
 		padding: 0.8em 0.8em 0.6em 0.8em;
 		border-radius: 5rem;
 

@@ -36,24 +36,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-//animations
-.fade-enter-active,
-.fade-leave-active {
-	transition: opacity 300ms ease-in-out;
-}
-.fade-enter,
-.fade-leave-to {
-	opacity: 0;
-}
-
-.tag-appear-enter-active,
-.tag-appear-leave-active {
-	transition: opacity 200ms ease-in-out;
-}
-.tag-appear-enter,
-.tag-appear-leave-to {
-	opacity: 0;
-}
+@import "@/assets/sass/_transitions";
 
 .filter {
 	position: absolute;
@@ -76,7 +59,7 @@ export default {
 	@include mq-min($v-10) {
 		top: -4.5rem;
 		width: 85%;
-		padding: 1.5rem 3rem 3rem 3rem;
+		padding: 1.5rem 5rem 3rem 5rem;
 	}
 
 	&-items {
@@ -93,6 +76,7 @@ export default {
 
 		cursor: pointer;
 		&:hover {
+			color: var(--primary-400);
 			text-decoration: underline;
 		}
 	}

@@ -46,7 +46,7 @@ export default {
 	transition: background-color 200ms ease-in-out, color 200ms ease-in-out;
 
 	&:hover {
-		background-color: var(--neutral-500);
+		background-color: var(--primary-400);
 		color: var(--neutral-300);
 	}
 
@@ -76,7 +76,7 @@ export default {
 		flex-shrink: 0;
 
 		border-radius: 0 0.5rem 0.5rem 0;
-		background: var(--neutral-500);
+		background-color: var(--primary-400);
 		padding: 0 1rem;
 
 		cursor: pointer;

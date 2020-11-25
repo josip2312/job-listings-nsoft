@@ -16,6 +16,7 @@
 				name="fade-list"
 				tag="section"
 				class="cards spacing"
+				:duration="{ enter: 400, leave: 150 }"
 				:class="{
 					translate: isFilterChosen,
 					'increase-translate': multipleFiltersChosen,
@@ -45,6 +46,7 @@ export default {
 	data() {
 		return {
 			filterTags: [],
+			card: "JobCard",
 
 			isLoading: false,
 			error: null,
@@ -112,14 +114,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-//animations
-.fade-list-enter,
-.fade-list-leave-to {
-	opacity: 0;
-}
-.fade-list-leave-active {
-	position: absolute;
-}
+@import "@/assets/sass/_transitions";
 
 .loading,
 .error {
@@ -141,9 +136,9 @@ export default {
 	}
 }
 .cards {
-	--spacer: 5rem;
-	animation: appear 500ms ease-in-out;
+	--spacer: 5.5rem;
 
+	animation: appear 500ms ease-in-out;
 	transform: translateY(0);
 	transition: transform 300ms ease-in-out;
 }
