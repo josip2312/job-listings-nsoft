@@ -5,6 +5,7 @@
 		</span>
 		<button
 			v-if="isFilter"
+			@click="$emit('remove-filter-tag', tag)"
 			class="tag-remove"
 		>
 			<img src="@/assets/images/icon-remove.svg" alt="" />
