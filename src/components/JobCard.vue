@@ -15,11 +15,11 @@
 					{{ job.position }}
 				</h3>
 
-				<div class="info-posted-at">
-					{{ job.postedAt }}
-				</div>
 				<div class="info-contract">
 					{{ job.contract }}
+				</div>
+				<div class="info-posted-at">
+					{{ job.postedAt }}
 				</div>
 				<div class="info-location">
 					{{ job.location }}
